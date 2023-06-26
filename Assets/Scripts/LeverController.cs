@@ -12,10 +12,8 @@ public class LeverController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.LogWarning("Collision detected");
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !isOpen)
         {
-            Debug.Log($"Player detected: Open lever");
             this.openLever();
         }
     }
