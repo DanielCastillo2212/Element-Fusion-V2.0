@@ -9999,6 +9999,7 @@ GameObject:
   - component: {fileID: 1991785566}
   - component: {fileID: 1991785565}
   - component: {fileID: 1991785568}
+  - component: {fileID: 1991785569}
   m_Layer: 0
   m_Name: Lever02
   m_TagString: Untagged
@@ -10067,7 +10068,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 3965db334295e4b3ab7f7ab2a3e2f8c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10120,6 +10121,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1243634, y: 0.97574615}
   m_EdgeRadius: 0
+--- !u!114 &1991785569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991785564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d513fb616eb24b64f98af830aa2a3130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
 --- !u!1 &2022791376
 GameObject:
   m_ObjectHideFlags: 0

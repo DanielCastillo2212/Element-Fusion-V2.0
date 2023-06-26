@@ -6,7 +6,7 @@ public class PortalController : MonoBehaviour
 {
     public Transform destination;
     public int jumpsPermited;
-    bool active = true;
+    public bool active = true;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
