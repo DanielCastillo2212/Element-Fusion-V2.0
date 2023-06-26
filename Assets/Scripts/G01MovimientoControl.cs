@@ -1,10 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MovController : MonoBehaviour
+public class G01MovimientoControl : MonoBehaviour
 {
-
-
-    private Rigidbody2D rb;
+     private Rigidbody2D rb;
     private float yVelocity = 0f;
     public float xVelocity = 20f;
     public float jumpForce = 100f;
@@ -25,7 +25,7 @@ public class MovController : MonoBehaviour
     {
         yVelocity = rb.velocity.y;
         rb.velocity = new Vector2(0, yVelocity);
-        
+
         if (Input.GetKey(KeyCode.LeftArrow)) 
             rb.velocity = new Vector2(-xVelocity, yVelocity);
 
