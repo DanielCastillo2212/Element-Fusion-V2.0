@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            Debug.Log("Suelo detectada");
             isJumping = false;
         }
     }

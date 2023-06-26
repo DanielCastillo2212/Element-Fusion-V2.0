@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sierra
   - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX
