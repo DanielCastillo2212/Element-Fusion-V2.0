@@ -7,6 +7,8 @@ TagManager:
   - Sierra
   - Ground
   - Wall
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 238063453600511213}
   - component: {fileID: 238063453600511212}
   - component: {fileID: 238063453600511218}
+  - component: {fileID: -483304380110410047}
+  - component: {fileID: 543382580370847862}
   m_Layer: 0
   m_Name: GL02
   m_TagString: Player
@@ -174,9 +176,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xVelocity: 30
-  jumpForce: 2500
-  gravityScale: 5
+  jumpForce: 3200
+  gravityScale: 6
   mass: 2
+--- !u!114 &-483304380110410047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238063453600511211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b660caec84f384bab127d9d24a61c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 3268360332511700055, guid: 970ddbfa7bb124f4c8de0b6df0884754, type: 3}
+--- !u!114 &543382580370847862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238063453600511211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3d2933b19e1e549938e7c318d15648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &238063454770635417
 GameObject:
   m_ObjectHideFlags: 0
