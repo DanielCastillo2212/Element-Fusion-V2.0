@@ -3,7 +3,7 @@ using UnityEngine;
 public class LeverController : MonoBehaviour
 {
     private Animator animator;
-    private bool isOpen = false;
+    public bool isOpen = false;
 
     void Start()
     {
