@@ -45,6 +45,7 @@ public class MovController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
+            Debug.Log("On the grouynd");
         }
     }
 }
