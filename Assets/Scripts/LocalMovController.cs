@@ -1,9 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MovController : MonoBehaviour
+public class LocalMovController : MonoBehaviour
 {
-
-
     private Rigidbody2D rb;
     private float yVelocity = 0f;
     public float xVelocity = 20f;
@@ -25,14 +25,14 @@ public class MovController : MonoBehaviour
     {
         yVelocity = rb.velocity.y;
         rb.velocity = new Vector2(0, yVelocity);
-        
-        if (Input.GetKey(KeyCode.LeftArrow)) 
+
+        if (Input.GetKey(KeyCode.A))
             rb.velocity = new Vector2(-xVelocity, yVelocity);
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
             rb.velocity = new Vector2(xVelocity, yVelocity);
 
-        if (Input.GetKeyUp(KeyCode.UpArrow) && !isJumping)
+        if (Input.GetKeyUp(KeyCode.W) && !isJumping)
         {
             rb.AddForce(Vector2.up * jumpForce);
             isJumping = true;
@@ -45,7 +45,6 @@ public class MovController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
-            Debug.Log("On the grouynd");
         }
     }
 }

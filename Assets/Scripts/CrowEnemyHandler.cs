@@ -29,16 +29,17 @@ public class CrowEnemyHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //float disToOne = Vector3.Distance(transform.position, playerOne.transform.position);
+        float disToOne = Vector3.Distance(transform.position, playerOne.transform.position);
         float disToTwo = Vector3.Distance(transform.position, playerTwo.transform.position);
 
-        //Vector3 dirOne = (playerOne.transform.position - transform.position).normalized;
+        Vector3 dirOne = (playerOne.transform.position - transform.position).normalized;
         Vector3 dirTwo = (playerTwo.transform.position - transform.position).normalized;
 
         if (disToTwo < DISTANCE_TO_ATTAK) attack(dirTwo);
         else animController.setAnim(CrowEnAC.AnimState.IDLE);
         
-        //if (disToOne < DISTANCE_TO_ATTAK) attack(dirOne);
+        if (disToOne < DISTANCE_TO_ATTAK) attack(dirOne);
+        else animController.setAnim(CrowEnAC.AnimState.IDLE);
 
     }
 
