@@ -6,14 +6,17 @@ TagManager:
   tags:
   - Sierra
   - Ground
+  - Wall
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Lc02
   - Water
   - UI
-  - 
+  - Lc01
   - 
   - 
   - 

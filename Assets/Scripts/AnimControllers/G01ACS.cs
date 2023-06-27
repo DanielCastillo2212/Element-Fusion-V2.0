@@ -39,9 +39,10 @@ public class G01ACS : MonoBehaviour
         }
        
        //Deslisarse
-
+       /*
         if (Input.GetKey(KeyCode.A))
             currentAnimation = 4;
+       */
 
         //Saltar
         if (Input.GetKey(KeyCode.UpArrow))
@@ -52,9 +53,11 @@ public class G01ACS : MonoBehaviour
         if (Input.GetKey(KeyCode.X))
             currentAnimation = 5;
 
+        /*
         //Morir
           if (Input.GetKey(KeyCode.D))
             currentAnimation = 7;
+        */
     
 
 

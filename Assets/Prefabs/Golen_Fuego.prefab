@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 502852910824456962}
   - component: {fileID: 502852910824456991}
   - component: {fileID: 502852910824456988}
+  - component: {fileID: -6142827954736839541}
+  - component: {fileID: 7983861185004803627}
   m_Layer: 0
   m_Name: Golen_Fuego
   m_TagString: Untagged
@@ -31,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 502852910824456966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.6, y: -29.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 3e1767ffab198494dacbc18486cc160e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -160,8 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xVelocity: 30
-  jumpForce: 2500
-  gravityScale: 5
+  jumpForce: 3200
+  gravityScale: 6
   mass: 2
 --- !u!114 &502852910824456988
 MonoBehaviour:
@@ -176,3 +178,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAnimation: 0
+--- !u!114 &-6142827954736839541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502852910824456966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b660caec84f384bab127d9d24a61c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 3268360332511700055, guid: 970ddbfa7bb124f4c8de0b6df0884754, type: 3}
+--- !u!114 &7983861185004803627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502852910824456966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3d2933b19e1e549938e7c318d15648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyObject: {fileID: 6046923537170712798, guid: 0b6adac2dc6ff544f8493c5306bc3bd3, type: 3}
+  doorObject: {fileID: 7250199509427302211, guid: 3252d2280c7a86f4c81b0b28206e4f72, type: 3}
