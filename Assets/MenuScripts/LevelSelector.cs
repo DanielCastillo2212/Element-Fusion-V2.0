@@ -20,7 +20,7 @@ public class LevelSelector : MonoBehaviour
     }
 
     public void OpenLevel3(){
-        SceneManager.LoadScene("Level_01");
+        SceneManager.LoadScene("Level_03");
     }
 
     public void OpenSelection(){

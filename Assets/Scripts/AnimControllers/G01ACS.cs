@@ -61,7 +61,7 @@ public class G01ACS : MonoBehaviour
     
 
 
-        animator.SetInteger("Estado", currentAnimation);
+        animator.SetInteger("anim", currentAnimation);
 
     }
 }
