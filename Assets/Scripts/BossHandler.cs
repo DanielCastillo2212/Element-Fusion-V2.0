@@ -1,25 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
-using UnityEngine.UIElements;
 
-public class CrowEnemyHandler : MonoBehaviour
+public class BossHandler : MonoBehaviour
 {
     public GameObject playerOne;
     public GameObject playerTwo;
 
     public const float DISTANCE_TO_ATTAK = 5f;
-    public bool canAttack = true;
-    public float attackInterval = 1f;
-    public float attackTimer = 0f;
 
-    private CrowEnAC animController;
+    private BossAC animController;
     private SpriteRenderer sr;
 
     void Start()
     {
-        animController = GetComponent<CrowEnAC>();
+        animController = GetComponent<BossAC>();
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -34,21 +27,17 @@ public class CrowEnemyHandler : MonoBehaviour
 
         if (disToTwo < DISTANCE_TO_ATTAK)
         {
-            if (canAttack)
-            {
-                attack(dirTwo);
-                canAttack = false;
-                attackTimer = attackInterval;
-            }
+             attack(dirTwo);
         }
 
-        else animController.setAnim(CrowEnAC.AnimState.IDLE);
-        
+        else animController.setAnim(BossAC.AnimState.IDLE);
+
+
         if (disToOne < DISTANCE_TO_ATTAK)
         {
-                attack(dirOne);
+            attack(dirOne);
         }
-        else animController.setAnim(CrowEnAC.AnimState.IDLE);
+        else animController.setAnim(BossAC.AnimState.IDLE);
 
     }
 
@@ -63,8 +52,7 @@ public class CrowEnemyHandler : MonoBehaviour
         transform.position += direction * DISTANCE_TO_ATTAK * Time.deltaTime;
 
         // Attack
-        animController.setAnim(CrowEnAC.AnimState.ATTACK);
+        animController.setAnim(BossAC.AnimState.ATTACK);
 
     }
-
 }
