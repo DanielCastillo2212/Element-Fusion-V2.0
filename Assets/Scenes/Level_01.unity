@@ -1515,35 +1515,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &301457863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6621119071879854853, guid: 773bbaf1dcde4c64faa0fb4abd3669a0, type: 3}
-  m_PrefabInstance: {fileID: 6621119071612148418}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &301457864 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6621119071879854858, guid: 773bbaf1dcde4c64faa0fb4abd3669a0, type: 3}
-  m_PrefabInstance: {fileID: 6621119071612148418}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &301457865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301457863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a88789ab87396644a1f3f24a4895e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characters2:
-  - {fileID: 9099752865717897916, guid: cb1be89f50dc2644f8e078863c0ebf4d, type: 3}
-  - {fileID: 6191373831637121337, guid: a0b2aa9d464718f4aa4f53679f083ba6, type: 3}
-  - {fileID: 8084869847111916570, guid: 3c7cc86fe849a5c4986734deff011122, type: 3}
-  playerStartPosition2: {fileID: 301457864}
-  menuScene2: Character Selection Menu
-  playerObject2: {fileID: 0}
 --- !u!1 &309742468
 GameObject:
   m_ObjectHideFlags: 0
