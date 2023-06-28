@@ -2,23 +2,26 @@ using UnityEngine;
 
 public class Colisiones: MonoBehaviour
 {
-    public Transform teleportTarget; // Transform del punto de teletransporte
+    private Transform teleportTarget; // Transform del punto de teletransporte
 
-    private Vector2 initialPosition; // Posición inicial del personaje
 
     private void Start()
     {
-        initialPosition = transform.position; // Almacenar la posición inicial del personaje
+        GameObject tp = GameObject.Find("RespOne");
+        teleportTarget = tp.transform;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Sierra"))
+        if (collision.CompareTag("SierraP2"))
         {
             if (teleportTarget != null)
             {
+                Debug.Log($"Tp to {teleportTarget}");
                 // Teletransportar el personaje al punto de teletransporte
-                transform.position = teleportTarget.position;
+                transform.position = new Vector3(
+                    teleportTarget.position.x,
+                    teleportTarget.position.y, 0);
             }
             else
             {
