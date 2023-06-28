@@ -9,7 +9,7 @@ public class DoorColisiones : MonoBehaviour
         if (collision.gameObject.CompareTag("Door") && hasKey)
         {   
             Debug.Log("Puerta abierta");
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
         }
     }
 
