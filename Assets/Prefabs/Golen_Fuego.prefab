@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 502852910824456988}
   - component: {fileID: -6142827954736839541}
   - component: {fileID: 7983861185004803627}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Golen_Fuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b660caec84f384bab127d9d24a61c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 3053550202237186783, guid: 9e0358345703c924791f6126fe4e56c1, type: 3}
 --- !u!114 &7983861185004803627
 MonoBehaviour:
   m_ObjectHideFlags: 0

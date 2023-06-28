@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GL02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 238063453600511211, guid: 6837e8c2d0150304dbcc4187ee8d5722, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 238063453600511214, guid: 6837e8c2d0150304dbcc4187ee8d5722, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -62,6 +66,10 @@ PrefabInstance:
     - target: {fileID: 238063453600511218, guid: 6837e8c2d0150304dbcc4187ee8d5722, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 238063454770635417, guid: 6837e8c2d0150304dbcc4187ee8d5722, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 238063453600511218, guid: 6837e8c2d0150304dbcc4187ee8d5722, type: 3}
