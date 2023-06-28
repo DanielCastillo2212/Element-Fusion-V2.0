@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3571219238138509333}
   - component: {fileID: 3383689264728092340}
   - component: {fileID: 6116087230169002997}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Golen_Hielo
   m_TagString: Player1
   m_Icon: {fileID: 0}
