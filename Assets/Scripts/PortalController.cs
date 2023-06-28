@@ -8,6 +8,13 @@ public class PortalController : MonoBehaviour
     public int jumpsPermited;
     public bool active = true;
 
+    private AudioSource tpSound;
+
+    private void Start()
+    {
+        tpSound = GetComponent<AudioSource>();
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +29,7 @@ public class PortalController : MonoBehaviour
     {
         Vector2 vDestination = new Vector2(destination.position.x, destination.position.y);
         player.transform.position = vDestination;
+        tpSound.Play();
     }
 
 }
