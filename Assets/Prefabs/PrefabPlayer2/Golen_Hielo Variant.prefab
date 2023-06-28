@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golen_Hielo Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3571219238138509324, guid: 22ce8aef837487646a265cf44d871d86, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 3571219238138509326, guid: 22ce8aef837487646a265cf44d871d86, type: 3}
       propertyPath: m_SortingOrder
       value: 3

@@ -11,6 +11,8 @@ TagManager:
   - Door
   - SierraP2
   - CrowEnemy
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
