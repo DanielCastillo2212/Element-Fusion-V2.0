@@ -17,9 +17,9 @@ GameObject:
   - component: {fileID: 3571219238138509333}
   - component: {fileID: 3383689264728092340}
   - component: {fileID: 6116087230169002997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Golen_Hielo
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b660caec84f384bab127d9d24a61c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 3268360332511700055, guid: 970ddbfa7bb124f4c8de0b6df0884754, type: 3}
 --- !u!114 &6116087230169002997
 MonoBehaviour:
   m_ObjectHideFlags: 0

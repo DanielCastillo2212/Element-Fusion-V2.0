@@ -6,16 +6,16 @@ public class P2Collisions : MonoBehaviour
 {
     public Transform teleportTarget; // Transform del punto de teletransporte
 
-    private Vector2 initialPosition; // Posición inicial del personaje
-
     private void Start()
     {
-        initialPosition = transform.position; // Almacenar la posición inicial del personaje
+
+        GameObject tp = GameObject.Find("RespTwo");
+        teleportTarget = tp.transform;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("SierraP2"))
+        if (collision.CompareTag("Sierra"))
         {
             if (teleportTarget != null)
             {

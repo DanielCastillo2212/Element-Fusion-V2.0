@@ -20,7 +20,7 @@ public class GameControl : MonoBehaviour
     int selectedCharacter2;
     public GameObject playerObject2;*/
 
-    private CinemachineVirtualCamera virtualCamera; // Referencia al componente CinemachineVirtualCamera
+    private CinemachineVirtualCamera vcamOne; // Referencia al componente CinemachineVirtualCamera
 
     // Start is called before the first frame update
     void Start()
@@ -28,19 +28,17 @@ public class GameControl : MonoBehaviour
         selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName, 0);
         playerObject = Instantiate(characters[selectedCharacter], playerStartPosition.position, characters[selectedCharacter].transform.rotation);
 
-        /*
-        selectedCharacter2 = PlayerPrefs.GetInt(selectedCharacterDataName2, 0);
-        playerObject2 = Instantiate(characters2[selectedCharacter2], playerStartPosition2.position, characters2[selectedCharacter2].transform.rotation);
-        */
-        virtualCamera = FindObjectOfType<CinemachineVirtualCamera>(); // Obtener referencia al componente CinemachineVirtualCamera
+        GameObject vcamObject = GameObject.Find("VCam01");
 
-        if (virtualCamera != null)
-        {
-            virtualCamera.Follow = playerObject.transform; // Asignar el objeto del jugador a la propiedad Follow de CinemachineVirtualCamera
-        }
-        else
-        {
-            Debug.LogWarning("CinemachineVirtualCamera not found in the scene. Make sure you have a CinemachineVirtualCamera component attached to a camera.");
+       vcamOne = vcamObject.GetComponent<CinemachineVirtualCamera>();
+        vcamOne.Follow = playerObject.transform;
+
+
+         GameObject[] enemies = GameObject.FindGameObjectsWithTag("CrowEnemy");
+
+        foreach(var enemy in enemies){
+        var enemyHandler = enemy.GetComponent<CrowEnemyHandler>();
+        enemyHandler.playerOne = playerObject;
         }
     }
 
