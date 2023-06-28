@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
-using UnityEngine.UIElements;
+
 
 public class CrowEnemyHandler : MonoBehaviour
 {
@@ -10,7 +7,7 @@ public class CrowEnemyHandler : MonoBehaviour
     public GameObject playerTwo;
 
     public float DISTANCE_TO_ATTAK = 5f;
-    public bool canAttack = true;
+    public bool attacking = false;
     public float attackInterval = 1f;
     public float attackTimer = 0f;
 
@@ -25,7 +22,8 @@ public class CrowEnemyHandler : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+
         float disToOne = Vector3.Distance(transform.position, playerOne.transform.position);
         float disToTwo = Vector3.Distance(transform.position, playerTwo.transform.position);
 
@@ -34,16 +32,26 @@ public class CrowEnemyHandler : MonoBehaviour
 
         if (disToTwo < DISTANCE_TO_ATTAK)
         {
+            attacking = true;
             attack(dirTwo);
         }
 
-        else animController.setAnim(CrowEnAC.AnimState.IDLE);
+        else
+        {
+            animController.setAnim(CrowEnAC.AnimState.IDLE);
+            attacking= false;
+        }
         
         if (disToOne < DISTANCE_TO_ATTAK)
         {
             attack(dirOne);
+            attacking = true;
         }
-        else animController.setAnim(CrowEnAC.AnimState.IDLE);
+        else
+        {
+            animController.setAnim(CrowEnAC.AnimState.IDLE);
+            attacking= false;
+        }
 
     }
 
@@ -60,7 +68,5 @@ public class CrowEnemyHandler : MonoBehaviour
 
         // Attack
         animController.setAnim(CrowEnAC.AnimState.ATTACK);
-
     }
-
 }
