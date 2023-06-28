@@ -8352,7 +8352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95331367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.2, y: 8.1, z: -10}
+  m_LocalPosition: {x: 28.72, y: 8.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12225,7 +12225,7 @@ GameObject:
   - component: {fileID: 1229984475}
   m_Layer: 0
   m_Name: obstacle_2
-  m_TagString: Untagged
+  m_TagString: Sierra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12290,7 +12290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229984472}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.46, y: 10.98, z: -0.30715993}
+  m_LocalPosition: {x: 42.46, y: 11.7, z: -0.30715993}
   m_LocalScale: {x: 0.7833, y: 0.66659385, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14236,7 +14236,7 @@ GameObject:
   - component: {fileID: 1824785239}
   m_Layer: 0
   m_Name: obstacle
-  m_TagString: Sierra
+  m_TagString: SierraP2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14301,7 +14301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824785233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.942272, y: -3.2011583, z: -0.30715993}
+  m_LocalPosition: {x: 36.942272, y: -2.3, z: -0.30715993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
