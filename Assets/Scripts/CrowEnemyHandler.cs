@@ -34,19 +34,14 @@ public class CrowEnemyHandler : MonoBehaviour
 
         if (disToTwo < DISTANCE_TO_ATTAK)
         {
-            if (canAttack)
-            {
-                attack(dirTwo);
-                canAttack = false;
-                attackTimer = attackInterval;
-            }
+            attack(dirTwo);
         }
 
         else animController.setAnim(CrowEnAC.AnimState.IDLE);
         
         if (disToOne < DISTANCE_TO_ATTAK)
         {
-                attack(dirOne);
+            attack(dirOne);
         }
         else animController.setAnim(CrowEnAC.AnimState.IDLE);
 
@@ -60,6 +55,7 @@ public class CrowEnemyHandler : MonoBehaviour
         if (direction.x > 0) sr.flipX = false;
 
         // Move enemy to attack
+        animController.setAnim(CrowEnAC.AnimState.WALK);
         transform.position += direction * DISTANCE_TO_ATTAK * Time.deltaTime;
 
         // Attack
