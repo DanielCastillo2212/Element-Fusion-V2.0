@@ -10,6 +10,7 @@ TagManager:
   - Key
   - Door
   - SierraP2
+  - CrowEnemy
   layers:
   - Default
   - TransparentFX

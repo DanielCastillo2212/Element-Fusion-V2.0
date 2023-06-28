@@ -30,6 +30,13 @@ void Start()
     {
         Debug.LogWarning("CinemachineVirtualCamera not found in the scene. Make sure you have a CinemachineVirtualCamera component attached to a camera.");
     }
+
+    GameObject[] enemies = GameObject.FindGameObjectsWithTag("CrowEnemy");
+
+    foreach(var enemy in enemies){
+        var enemyHandler = enemy.GetComponent<CrowEnemyHandler>();
+        enemyHandler.playerTwo = playerObject2;
+    }
 }
 
 // Update is called once per frame

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8711987738594795610}
   m_Layer: 0
   m_Name: CrowEnemy
-  m_TagString: Untagged
+  m_TagString: CrowEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerOne: {fileID: 0}
   playerTwo: {fileID: 0}
-  rotationSpeed: 5
+  canAttack: 1
+  attackInterval: 1
+  attackTimer: 0
 --- !u!114 &8711987738594795610
 MonoBehaviour:
   m_ObjectHideFlags: 0

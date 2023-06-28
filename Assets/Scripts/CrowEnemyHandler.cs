@@ -9,7 +9,7 @@ public class CrowEnemyHandler : MonoBehaviour
     public GameObject playerOne;
     public GameObject playerTwo;
 
-    public const float DISTANCE_TO_ATTAK = 5f;
+    public float DISTANCE_TO_ATTAK = 5f;
     public bool canAttack = true;
     public float attackInterval = 1f;
     public float attackTimer = 0f;
