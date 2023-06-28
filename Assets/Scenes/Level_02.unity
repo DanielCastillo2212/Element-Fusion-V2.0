@@ -10707,7 +10707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 926777552}
   jumpsPermited: 0
-  active: 1
+  active: 0
 --- !u!82 &1287267161
 AudioSource:
   m_ObjectHideFlags: 0
