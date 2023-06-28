@@ -21,7 +21,7 @@ public class BossAC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetInteger("anim", (int)currentAnimation);
+        animator.SetInteger("anim", (int) currentAnimation);
     }
 
     public void setAnim(AnimState state)
