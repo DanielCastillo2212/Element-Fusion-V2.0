@@ -20,16 +20,34 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         textMeshProOne = logOne.GetComponent<TextMeshProUGUI>();
-        playerLogOne = playerOne.GetComponent<PlayerLog>();
-
         textMeshProTwo = logTwo.GetComponent<TextMeshProUGUI>();
-        playerLogTwo = playerTwo.GetComponent<PlayerLog>();
+        Invoke("Setup", 1f);
     } 
 
     // Update is called once per frame
     void Update() 
     {
-        textMeshProOne.text = $"Player One [Points: {playerLogOne.Points} Lifes: {playerLogOne.Lifes}]";
-        textMeshProTwo.text = $"Player Two [Points: {playerLogTwo.Points} Lifes: {playerLogTwo.Lifes}]";
+        if (playerLogOne != null)
+            textMeshProOne.text = $"Player One [Points: {playerLogOne.Points} Lifes: {playerLogOne.Lifes}]";
+
+        if (playerLogTwo != null)
+            textMeshProTwo.text = $"Player Two [Points: {playerLogTwo.Points} Lifes: {playerLogTwo.Lifes}]";
+    }
+
+    private void Setup()
+    {
+
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+        if (players.Length == 2)
+        {
+            playerOne = players[0];
+            playerTwo = players[1];
+        }
+        else return;
+
+        playerLogOne = playerOne.GetComponent<PlayerLog>();
+        playerLogTwo = playerTwo.GetComponent<PlayerLog>();
+        CancelInvoke("Setup");
     }
 }
