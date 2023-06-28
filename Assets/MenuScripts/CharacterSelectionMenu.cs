@@ -112,18 +112,21 @@ public class CharacterSelectionMenu : MonoBehaviour
         PlayerPrefs.SetInt(selectedCharacterDataName, selectedCharacter);
         //PlayerPrefs.SetInt(selectedCharacterDataName2, selectedCharacter2);
         //PlayerPrefs.SetInt(characterSelectionMenuPlayer2.selectedCharacterDataName2, characterSelectionMenuPlayer2.selectedCharacter2);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level_01");
     }
 
     public void OpenLevel2()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, selectedCharacter);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level_02");
     }
 
     public void OpenLevel3()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, selectedCharacter);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level_03");
     }
 
