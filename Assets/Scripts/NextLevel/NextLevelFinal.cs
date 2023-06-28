@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevelPortal : MonoBehaviour
+public class NextLevelFinal : MonoBehaviour
 {
-    public string nextScene = "Level_02"; // Nombre de la siguiente escena
+    public string nextScene = "Level_03"; // Nombre de la siguiente escena
 
     private int playerCount;
     /*
@@ -26,8 +26,4 @@ public class NextLevelPortal : MonoBehaviour
            
         }
     }
-
-
 }
-
-
