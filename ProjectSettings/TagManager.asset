@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Key
   - Door
+  - SierraP2
   layers:
   - Default
   - TransparentFX
