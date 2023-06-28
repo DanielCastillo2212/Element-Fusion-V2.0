@@ -114,4 +114,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aced7e16205d77499fbd932db7b3275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 3112454859460769074, guid: 0edfe63c4c4c29345b5a29ed789f9310, type: 3}
+  teleportTarget: {fileID: 6621119071879854858, guid: 773bbaf1dcde4c64faa0fb4abd3669a0, type: 3}

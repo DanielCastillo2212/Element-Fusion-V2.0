@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b660caec84f384bab127d9d24a61c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 3268360332511700055, guid: 970ddbfa7bb124f4c8de0b6df0884754, type: 3}
+  teleportTarget: {fileID: 3053550202237186783, guid: 9e0358345703c924791f6126fe4e56c1, type: 3}
 --- !u!114 &7983861185004803627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,5 +203,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3d2933b19e1e549938e7c318d15648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyObject: {fileID: 6046923537170712798, guid: 0b6adac2dc6ff544f8493c5306bc3bd3, type: 3}
-  doorObject: {fileID: 7250199509427302211, guid: 3252d2280c7a86f4c81b0b28206e4f72, type: 3}
