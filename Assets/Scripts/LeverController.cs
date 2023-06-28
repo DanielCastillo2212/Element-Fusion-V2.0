@@ -4,10 +4,12 @@ public class LeverController : MonoBehaviour
 {
     private Animator animator;
     public bool isOpen = false;
+    private AudioSource audioSource;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,6 +23,7 @@ public class LeverController : MonoBehaviour
     private void openLever()
     {
         isOpen = true;
+        audioSource.Play();
         animator.SetBool("isOpen", isOpen);
     }
 }
