@@ -28,10 +28,10 @@ public class GameManager : MonoBehaviour
     void Update() 
     {
         if (playerLogOne != null)
-            textMeshProOne.text = $"Player One [Points: {playerLogOne.Points} Lifes: {playerLogOne.Lifes}]";
+            textMeshProOne.text = $"Player One [Lifes: {playerLogOne.Lifes}]";
 
         if (playerLogTwo != null)
-            textMeshProTwo.text = $"Player Two [Points: {playerLogTwo.Points} Lifes: {playerLogTwo.Lifes}]";
+            textMeshProTwo.text = $"Player Two [Points: {playerLogTwo.Points}]";
     }
 
     private void Setup()

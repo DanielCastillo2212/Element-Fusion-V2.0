@@ -16,7 +16,10 @@ public class PlayerLog : MonoBehaviour
                 Lifes--;
 
             else
+            {
                 Destroy(collision.gameObject);
+                Points++;
+            }
         }
     }
 }
