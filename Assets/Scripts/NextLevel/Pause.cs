@@ -24,6 +24,12 @@ public class Pause : MonoBehaviour
                 PauseGame();
             }
         }
+
+        // Verificar si se presiona la tecla para volver al menú principal
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ReturnToMainMenu();
+        }
     }
 
     // Método para pausar el juego
@@ -48,4 +54,5 @@ public class Pause : MonoBehaviour
         SceneManager.LoadScene("Menú"); // Cambia "MainMenu" por el nombre de tu escena principal
     }
 }
+
 
